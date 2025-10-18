@@ -1,0 +1,27 @@
+:root{--bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--glass:rgba(255,255,255,0.04);--muted:#9aa4b2}
+    *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Noto Sans KR',sans-serif}
+    body{margin:0;background:linear-gradient(180deg,#071029 0%,var(--bg) 100%);color:#e6eef8;min-height:100vh}
+    .wrap{max-width:980px;margin:36px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:108px;height:108px;border-radius:18px;background:linear-gradient(135deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:700;box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
+    main{background:linear-gradient(180deg,rgba(255,255,255,0.02),var(--card));padding:20px;border-radius:14px}
+    aside{background:var(--card);padding:18px;border-radius:12px}
+
+    section{margin-bottom:18px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px;color:#dfe9ff}
+
+    .card{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    .skills{display:flex;gap:10px;flex-wrap:wrap}
+
+    .projects ul{list-style:none;padding:0;margin:0}
+    .projects li{padding:10px;border-radius:8px;margin-bottom:8px;background:linear-gradient(180deg,transparent,rgba(255,255,255,0.01))}
+    .muted{color:var(--muted);font-size:13px}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:84px;height:84px;font-size:34px}}
